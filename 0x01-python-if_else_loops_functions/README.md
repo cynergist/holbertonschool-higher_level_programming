@@ -1,8 +1,17 @@
-#0x01. Python - if/else, loops, functions
+# 0x01. Python - if/else, loops, functions
+
+## Resources
+[More Control Flows - python.org](https://docs.python.org/3.4/tutorial/controlflow.html) <br />
+[Python Indentation Myths - LA Django, Sandy Strong](chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/https://files.meetup.com/1544869/Python%20Indentation%20Myths.pdf) <br />
+[Python IndentationError, Atom](https://www.youtube.com/watch?v=1QXOd2ZQs-Q) <br />
+[How to Use String Formatters in Python](https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3) <br />
+[Learn to program with Python, Derek Banas](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt) <br />
+[PEP 8 Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/) <br />
+[Holberton intranet, 0x00 Resources](https://intranet.hbtn.io/projects/231) <br />
 
 ## Learning Objectives
 
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google: <br/>
+At the end of this project, you are expected to be able to explain to anyone, without the help of Google: <br />
 
 ## General
 - Why Python programming is awesome (don’t forget to tweet today, with the hashtag #pythoniscool :))
