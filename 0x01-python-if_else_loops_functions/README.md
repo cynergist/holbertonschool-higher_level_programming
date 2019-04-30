@@ -3,7 +3,7 @@
 ## Resources <br />
 
 [More Control Flows - python.org](https://docs.python.org/3.4/tutorial/controlflow.html) <br />
-[Python Indentation Myths - LA Django, Sandy Strong](chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/https://files.meetup.com/1544869/Python%20Indentation%20Myths.pdf) <br />
+[Python Indentation Myths, LA Django, Sandy Strong](chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/https://files.meetup.com/1544869/Python%20Indentation%20Myths.pdf) <br />
 [Python IndentationError, Atom](https://www.youtube.com/watch?v=1QXOd2ZQs-Q) <br />
 [How to Use String Formatters in Python](https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3) <br />
 [Learn to program with Python, Derek Banas](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt) <br />
@@ -36,7 +36,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 0. 0-positive_or_negative.py // This program will assigns a random signed number to the variable number each time it is executed. Complete the source code in order to print whether the number stored in the variable number is positive or negative.
 
-- You can find the source code here
+- You can find the source code [here](https://github.com/holbertonschool/0x01.py/blob/master/0-positive_or_negative_py)
 - The variable number will store a different value every time you will run this program
 - You don’t have to understand what import, random. randint do. Please do not touch this code
 - The output of the program should be:
@@ -48,7 +48,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 1. 1-last_digit.py // This program will assigns a random signed number to the variable number each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable number.
 
-- You can find the source code here
+- You can find the source code [here](https://github.com/holbertonschool/0x01.py/blob/master/1-last_digit_py)
 - The variable number will store a different value every time you will run this program
 - You don’t have to understand what import, random.randint do. Please do not touch this code. This line should not change: number = random.randint(-10000, 10000)
 - The output of the program should be:
