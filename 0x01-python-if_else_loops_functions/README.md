@@ -1,6 +1,7 @@
-# 0x01. Python - if/else, loops, functions
+# 0x01. Python - if/else, loops, functions <br />
 
-## Resources
+## Resources <br />
+
 [More Control Flows - python.org](https://docs.python.org/3.4/tutorial/controlflow.html) <br />
 [Python Indentation Myths - LA Django, Sandy Strong](chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/https://files.meetup.com/1544869/Python%20Indentation%20Myths.pdf) <br />
 [Python IndentationError, Atom](https://www.youtube.com/watch?v=1QXOd2ZQs-Q) <br />
@@ -9,11 +10,11 @@
 [PEP 8 Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/) <br />
 [Holberton intranet, 0x00 Resources](https://intranet.hbtn.io/projects/231) <br />
 
-## Learning Objectives
+## Learning Objectives <br />
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google: <br />
 
-## General
+## General <br />
 - Why Python programming is awesome (don’t forget to tweet today, with the hashtag #pythoniscool :))
 - Why indentation is so important in Python
 - How to use the if, if ... else statements
@@ -31,7 +32,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - What’s a traceback
 - What are the arithmetic operators and how to use them
 
-## Tasks
+## Tasks <br />
 
 0. 0-positive_or_negative.py // This program will assigns a random signed number to the variable number each time it is executed. Complete the source code in order to print whether the number stored in the variable number is positive or negative.
 
