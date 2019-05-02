@@ -19,4 +19,3 @@ user interface to a module, or for testing purposes like running the module
 as a script executes a test suite.
 https://docs.python.org/3.4/tutorial/modules.html
 """
-""""""""
