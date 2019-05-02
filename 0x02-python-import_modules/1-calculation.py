@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
 Note: the file calculator_1 contains functions for addition, subraction,
-multiplication, and division. [from <filename> import <function name(s)]
+multiplication, and division. Convention: from filename import
+function name(s)
 """
 if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
