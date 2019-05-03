@@ -1,11 +1,16 @@
 #!/usr/bin/python3
-import sys
+if __name__ == "__main__":
+    """
+    Note: it is possible to use sys, but we are only concerned
+    withe argv, so will only import this module
+    """
+    from sys import argv
 
-if len(sys.argv) is 1:
-    print("0 arguments.")
-if len(sys.argv) is 2:
-    print("1 argument:\n1: {}".format(str(sys.argv[1]))
-if len(sys.argv) > 2:
-    print("{} arguments:".format(len(sys.argv) - 1))
-    for i in range(len(sys.argv) - 1):
-          print("{:d}: {:s}\n".format(i + 1, sys.argv[i + 1]))
+    if len(argv) is 2:
+        print("1 argument:\n1: {}".format(str(argv[1]))
+    elif len(argv) > 2:
+        print("{} arguments:".format(len(argv) - 1))
+        for i in range(len(argv) - 1):
+              print("{:d}: {:s}\n".format(i + 1, argv[i + 1]))
+    else:
+        print("0 arguments.")
