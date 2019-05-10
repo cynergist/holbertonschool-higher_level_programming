@@ -7,11 +7,9 @@ def best_score(a_dictionary):
     all students have a different score
     no module imported
     """
-    name = max(a_dictionary, key = lambda name: a_dictionary[name])
-    points = a_dictionary[name]
-    return name
-
-    # key, value = max(a_dictionary.iteritems(), key = lambda p: p[1])
-    # maximum = max(a_dictionary, key=a_dictionary.get)
-    # return a_dictionary[maximum]
-    # max(a_dictionary.items(), key=lambda k: k[1])
+    # Validation statement for no score found
+    if not a_dictionary:
+        return None
+    else:
+        # .keys converts dict to a list, then sorted, take last key element
+        return sorted(a_dictionary.keys())[-1]
