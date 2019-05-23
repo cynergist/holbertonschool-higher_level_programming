@@ -2,8 +2,8 @@
 
 ## Resources
 [doctest — Test interactive Python examples (until “26.2.3.7. Warnings” included)](https://docs.python.org/3.4/library/doctest.html) </br >
-[doctest – Testing through documentation](https://docs.python.org/3.4/library/doctest.html) <br/ >
-[Python testing](chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/http://uhs.es/Python.Testing.Beginner%27s.Guide.Daniel.Arbuckle.2010.pdf) <br/ >
+[doctest – Testing through documentation](https://docs.python.org/3.4/library/doctest.html) </br >
+[Python testing](chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/http://uhs.es/Python.Testing.Beginner%27s.Guide.Daniel.Arbuckle.2010.pdf) </br >
 
 ## Learning Objectives
 - What’s an interactive test
