@@ -1,0 +1,41 @@
+"""
+The ``matrix_divided`` module
+======================
+
+This module supplies tests for the function matrix_divided(). For example, we expect this to pass:
+
+	matrix_divided([[1, 2, 3], [4, 5, 6]])
+	[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]] 
+-------------------
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+	>>> matrix_divided([[1, 2, 3], [4, 5, 6]])
+	Traceback (most recent call last):
+	TypeError: matrix_divided() missing 1 required positional argument: 'div'
+	>>> matrix_divided("string", [4, 5, 6])
+	Traceback (most recent call last):
+	TypeError: unsupported operand type(s) for /: 'str' and 'list'
+	>>> matrix_divided([], []) 
+	Traceback (most recent call last):
+	TypeError: matrix_divided() missing 1 required positional argument: 'div'
+	>>> matrix_divided([[1, 2], [3, 4, 5]])
+	Traceback (most recent call last):
+	TypeError: matrix_divided() missing 1 required positional argument: 'div'
+	>>> m = [[1, 2, 3], [4, 5, 6]]
+	>>> matrix_divided(m, 2)
+	[[0.5, 1.0, 1.5], [2.0, 2.5, 3.0]]
+	>>> matrix_divided(['string', 'string', 'string'], ['s', 's', 's'])
+	Traceback (most recent call last):
+	TypeError: unsupported operand type(s) for /: 'str' and 'list'
+	>>> m = [[1, 2, 3], [4, 5, 6]]
+	>>> matrix_divided(m, 0)
+	Traceback (most recent call last):
+		...
+	ZeroDivisionError: division by zero
+	>>> m = [[1, 2, 3], [4, 5, 6]]
+	>>> matrix_divided(m, -1)
+	[[-1.0, -2.0, -3.0], [-4.0, -5.0, -6.0]]
+	>>> m = [[1, 2, 3], [4, 5, 6]]
+	>>> matrix_divided(m, 0.5)
+	[[2.0, 4.0, 6.0], [8.0, 10.0, 12.0]]
