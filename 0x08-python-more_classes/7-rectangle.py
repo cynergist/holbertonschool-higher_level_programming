@@ -74,7 +74,8 @@ class Rectangle:
         if not self.__width or not self.__height:
             return ""
         else:
-            return "\n".join([str(self.print_symbol) * self.__width] * self.__height)
+            return "\n".join([str(self.print_symbol) * self.__width] *
+                             self.__height)
 
     def __repr__(self):
         """ Returns official printable str of the rectangle instance """
