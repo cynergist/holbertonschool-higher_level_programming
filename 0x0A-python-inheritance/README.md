@@ -2,7 +2,7 @@
 
 ## Resources <br />
 
-[Inheritance] - python.org](https://docs.python.org/3.4/tutorial/classes.html#inheritance)
+[Inheritance - python.org](https://docs.python.org/3.4/tutorial/classes.html#inheritance) <br />
 [Multiple Inheritance - python.org](https://docs.python.org/3.4/tutorial/classes.html#multiple-inheritance) <br />
 [Inheritance in Python](https://hub.packtpub.com/inheritance-python/) <br />
 [Learn to Program 10: Inheritance Magic Methods](https://www.youtube.com/watch?v=d8kCdLCi6Lk) <br />
