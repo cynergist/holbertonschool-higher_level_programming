@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import os
+
 
 """ a function that returns number of lines in a text file
 """
@@ -7,8 +7,8 @@ import os
 
 def number_of_lines(filename=""):
     numlines = 0
-    with open(filename, mode="r", encoding="utf-8") as file:
-        for line in file:
+    with open(filename, mode="r", encoding="utf-8") as f:
+        while f.readline():
             numlines = numlines + 1
     return numlines
 
