@@ -1,26 +1,39 @@
-"""
 The ``print_sorted`` module
-==========================
+====================================================
 
-This module supplies tests for the function add_integer().
-For example, we expect this to pass:
-__________________________
-
+This module supplies tests for the function add_integer()
+____________________________________________________
+Import function from module
     >>> my_list = __import__('1-my_list').MyList
-    >>> mylist = my_list([2])
+    
+    Test on instance of mylist with 0 items
+    >>> mylist = my_list()
+    >>> mylist.print_sorted()
+    []
+
+    Test sorting my list with 1 item
+    >>> mylist = my_list()
+    >>> mylist.append(2)
+    >>> mylist.print_sorted()
+    [2]
+
+    Test sorting mylist with 3 items and negative int
     >>> mylist.append(4)
     >>> mylist.append(6)
-    >>> print(mylist)
-    [2, 4, 6]
+    >>> mylist.append(-8)
+    >>> mylist.print_sorted()
+    [-8, 2, 4, 6]
     >>> mylist.append(8)
-    >>> mylist
-    [2, 4, 6, 8]
+    >>> mylist.print_sorted()
+    [-8, 2, 4, 6, 8]
+
+    Test appending a string
     >>> mylist.append("who do we appreciate")
-    >>> mylist
-    [2, 4, 6, 8, 'who do we appreciate']
+
+    Test sorting list with string
     >>> sorted(mylist)
     Traceback (most recent call last):
-        sorted(mylist)
+    	      sorted(mylist)
     TypeError: unorderable types: str() < int()
     >>> mylist
-    [2, 4, 6, 8, 'who do we appreciate']
+    [2, 4, 6, -8, 8, 'who do we appreciate']
