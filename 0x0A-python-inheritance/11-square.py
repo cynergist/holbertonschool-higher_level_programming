@@ -8,11 +8,9 @@ class Square(Rectangle):
     def __init__(self, size):
         ''' Creates an instance of a Square.
 
-        Arg1: width and height of the square.
+        Arg1: equal width and height of the square.
         '''
         self.__size = self.integer_validator('size', size)
-        ''' access parent class BaseGeometry '''
-        super().__init__(self.__size, self.__size)
 
     def area(self):
         ''' Method returns area of square, or size squared. '''
@@ -20,4 +18,4 @@ class Square(Rectangle):
 
     def __str__(self):
         ''' String representation of a square '''
-        return '[Square] {:d}/{:d}'.format(self.width, self.height)
+        return '[Square] {:d}/{:d}'.format(self.__size, self.__size)
