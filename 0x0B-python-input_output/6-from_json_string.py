@@ -2,7 +2,8 @@
 import json
 
 '''
-a function that returns a Python data struct object represented by a JSON string
+a function that returns a Python data struct \
+object represented by a JSON string
 '''
 
 
