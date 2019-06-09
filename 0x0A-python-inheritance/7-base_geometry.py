@@ -1,28 +1,25 @@
 #!/usr/bin/python3
-""" A class for BaseGeometry
-
-"""
+''' BaseGeometry module. '''
 
 
 class BaseGeometry():
-
-    """ A class. """
+    ''' A BaseGeometry parent class. '''
     def __init__(self):
-        """ Creates an instance of BaseGeometry. """
+        ''' Creates an instance of BaseGeometry. '''
         pass
 
     def area(self):
-        """ Raises a TypeError. """
-        raise TypeError('area() is not implemented')
+        ''' Method to calculate area '''
+        raise Exception('area() is not implemented')
 
     def integer_validator(self, name, value):
-        """ Validates an argument
+        ''' Validates value.
 
         Exceptions:
         1. Raise TypeError if value is not an int
         2. Raise ValueError if value is less than or equal to 0
-        """
+        '''
         if type(value) is not int:
-            raise TypeError('{:s} must be an integer'.format(name))
+            raise TypeError('{} must be an integer'.format(name))
         if value <= 0:
-            raise ValueError('{:s} must be greater than 0'.format(name))
+            raise ValueError('{} must be greater than 0'.format(name))
