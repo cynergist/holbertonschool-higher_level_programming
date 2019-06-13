@@ -22,8 +22,8 @@ class Rectangle(Base):
 
     @property
     def width(self):
-    ''' Creates an attribute of Rectangle '''
-    return self.__width
+        ''' Creates an attribute of Rectangle '''
+        return self.__width
 
     @width.setter
     def width(self, w):
@@ -31,7 +31,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
-    ''' Creates an attribute of Rectangle '''
+        ''' Creates an attribute of Rectangle '''
         return self.__height
 
     @height.setter
@@ -40,17 +40,17 @@ class Rectangle(Base):
 
     @property
     def x(self):
-    ''' Creates an attribute of Rectangle '''
-        return self.x
+        ''' Creates an attribute of Rectangle '''
+        return self.__x
 
     @x.setter
     def x(self, new_x):
         self.__x = new_x
 
     @property
-    ''' Creates an attribute of Rectangle '''
     def y(self):
-        return self.y
+        ''' Creates an attribute of Rectangle '''
+        return self.__y
 
     @y.setter
     def y(self, new_y):
