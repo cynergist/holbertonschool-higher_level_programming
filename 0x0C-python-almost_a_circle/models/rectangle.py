@@ -1,4 +1,4 @@
- #!/usr/bin/python3
+#!/usr/bin/python3
 ''' Module for Base '''
 
 from models.base import Base
@@ -22,7 +22,8 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        return self.__width
+    ''' Creates an attribute of Rectangle '''
+    return self.__width
 
     @width.setter
     def width(self, w):
@@ -30,6 +31,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
+    ''' Creates an attribute of Rectangle '''
         return self.__height
 
     @height.setter
@@ -38,6 +40,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
+    ''' Creates an attribute of Rectangle '''
         return self.x
 
     @x.setter
@@ -45,6 +48,7 @@ class Rectangle(Base):
         self.__x = new_x
 
     @property
+    ''' Creates an attribute of Rectangle '''
     def y(self):
         return self.y
 
