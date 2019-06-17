@@ -97,3 +97,11 @@ class Rectangle(Base):
         ''' Method prints hashes to stdout of the Rectangle instance '''
         print(('\n' * self.__y + (' ' * self.__x + '#' * self.__width + '\n') *
                self.__height)[:-1])
+
+    def __str__(self):
+        ''' Returns string representation of the Rectangle '''
+        return '[Rectangle] ({}) {:d}/{:d} - {:d}/{:d}'.format(self.id,
+                                                               self.__x,
+                                                               self.__y,
+                                                               self.__width,
+                                                               self.__height)
