@@ -95,5 +95,5 @@ class Rectangle(Base):
 
     def display(self):
         ''' Method prints hashes to stdout of the Rectangle instance '''
-        print(('\n' * self.__y + (' ' * self.__x + '#' * self.__width + '\n')
-              * self.__height)[:-1])
+        print(('\n' * self.__y + (' ' * self.__x + '#' * self.__width + '\n') *
+               self.__height)[:-1])
