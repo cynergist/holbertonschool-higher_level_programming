@@ -1,24 +1,25 @@
 #!/usr/bin/python3
-''' Module for Base '''
+''' Module for Rectangle inherited from Base '''
 
 from models.base import Base
 
 
 class Rectangle(Base):
-    ''' A child class for a rectangle. '''
-    def __init__(self, width, height, x=0, y=0, id=None):
-        ''' Creates an intstance of Rectangle
+    ''' A child class for a Rectangle.
         Arg1: width of the rectangle
         Arg2: height of the rectangle
-        Arg3: x
-        Arg4: y
+        Arg3: x - horizontal offset of the rectangle
+        Arg4: y - vertical offset of the rectangle
+        Arg 5: id
         '''
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+    def __init__(self, width, height, x=0, y=0, id=None):
+        ''' Creates an intstance of Rectangle '''
         ''' access parent class Base '''
         super().__init__(id)
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
@@ -26,65 +27,64 @@ class Rectangle(Base):
         return self.__width
 
     @width.setter
-    def width(self, w):
+    def width(self, value):
         ''' Sets property of width
         TypeError and ValueError exceptions for width
         must be an integer greater than 0
         '''
-        if type(w) is not int:
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        if w <= 0:
+        if value <= 0:
             raise ValueError("width must be > 0")
-
-        self.__width = w
+        self.__width = value
 
     @property
     def height(self):
-        ''' Attribute retrievew height of Rectangle '''
+        ''' Attribute retrieves height of Rectangle '''
         return self.__height
 
     @height.setter
-    def height(self, h):
+    def height(self, value):
         ''' Sets property of height
         TypeError and ValueError exceptions for height
         must be an integer greater than 0
         '''
-        if type(h) is not int:
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
-        if h <= 0:
+        if value <= 0:
             raise ValueError("height must be > 0")
-        self.__height = h
+        self.__height = value
 
     @property
     def x(self):
-        ''' Creates an attribute of Rectangle '''
+        ''' Returns the horizontal offset of the Rectangle '''
         return self.__x
 
     @x.setter
-    def x(self, new_x):
+    def x(self, value):
         ''' Sets property of x
         TypeError and ValueError exceptions for x
         must be an integer greater than 0
         '''
-        if type(x) is not int:
+        if type(value) is not int:
             raise TypeError("x must be an integer")
-        if x <= 0:
+        if value < 0:
             raise ValueError("x must be >= 0")
-        self.__x = new_x
+        self.__x = value
 
     @property
     def y(self):
-        ''' Creates an attribute of Rectangle '''
+        ''' Returns the verticle offset of the Rectangle '''
         return self.__y
 
     @y.setter
-    def y(self, new_y):
+    def y(self, value):
         ''' Sets property of y
         TypeError and ValueError exceptions for y
         must be an integer greater than 0
         '''
-        if type(y) is not int:
+        if not isinstance(value, int):
             raise TypeError("y must be an integer")
-        if y <= 0:
+        if value < 0:
             raise ValueError("y must be >= 0")
-        self.__y = new_y
+        self.__y = value
