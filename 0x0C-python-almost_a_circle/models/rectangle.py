@@ -92,3 +92,8 @@ class Rectangle(Base):
     def area(self):
         ''' Method returns area of the Rectangle '''
         return self.__width * self.__height
+
+    def display(self):
+        ''' Method prints hashes to stdout of the Rectangle instance '''
+        print(('\n' * self.__y + (' ' * self.__x + '#' * self.__width + '\n')
+              * self.__height)[:-1])
