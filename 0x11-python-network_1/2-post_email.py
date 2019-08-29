@@ -18,3 +18,8 @@ if __name__ == "__main__":
         ''' The returned response object gives us access to all headers '''
         url_page = response.read()
         print(url_page.decode())
+'''
+Returns:
+$ ./2-post_email.py http://0.0.0.0:5000/post_email hr@holbertonschool.com
+Your email is: hr@holbertonschool.com
+'''
