@@ -10,16 +10,16 @@ if __name__ == '__main__':
     url = 'http://0.0.0.0:5000/search_user'
     # q parameter is our line argument
     q = argv[1] if len(argv) > 1 else ''
-    # Make a post request with the parameter and convert to json
-    r = requests.post(url, data={'q': q}).json()
+    # Make a post request with the parameter
+    r = requests.post(url, data={'q': q})
     '''
-    With POST, form data 'id' and 'name' appear within the message body
-    of the HTTP request upon converting to json
+    With POST, form data appears within the message body of the HTTP request
     '''
-    if 'id' in r or 'name' in r is not None:
-        print('[{}] {}'.format(r['id'], r['name']))
+    to_json = r.json()
     # Check that our response returned objects from the API
-    elif 'id' in r or 'name' in r is None:
+    if 'id' in to_json or 'name' in to_json is not None:
+        print('[{}] {}'.format(to_json['id'], to_json['name']))
+    elif 'id' in to_json or 'name' in to_json is None:
         print('Not a valid JSON')
     else:
         print('No result')
