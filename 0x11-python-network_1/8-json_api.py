@@ -14,7 +14,8 @@ if __name__ == '__main__':
     try:
         r = requests.post(url, data={'q': q})
         '''
-        With POST, form data appears within the message body of the HTTP request
+        With a POST request, form data appears within the message
+        body of the HTTP request
         '''
         to_json = r.json()
         # Check that our response returned objects from the API
